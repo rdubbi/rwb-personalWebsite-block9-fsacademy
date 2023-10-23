@@ -1,0 +1,41 @@
+html {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/690/000/original/blue-binary-cyber-circuit-future-technology-concept-background-vector.jpg);
+}
+.pagetext {
+  text-align: center;
+  color: coral;
+  background-color: black;
+  padding: 10px;
+  margin: 60px;
+}
+
+#quote {
+  text-align: center;
+  color: coral;
+}
+/* I cant figure out why I cannot change the color 
+of the hyperlinked text in the navigation bar */
+.links {
+  color: coral;
+}
+/* I drew alot of inspiration from the sample website 
+for the following styling. I tried to personalize it and omitted components that I 
+could not figure out the purpose for by 
+expirementing with the code. */
+.navbar {
+  color: coral;
+  background-color: black;
+  align-items: center;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
