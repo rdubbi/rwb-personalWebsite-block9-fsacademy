@@ -1,41 +1,176 @@
+/*I tried to work in the order of what I want to have loaded first and keep things generally in the same grouping.*/
+/*Main styling section*/
 html {
-  background-image: url(https://static.vecteezy.com/system/resources/previews/000/690/000/original/blue-binary-cyber-circuit-future-technology-concept-background-vector.jpg);
-}
-.pagetext {
-  text-align: center;
-  color: coral;
-  background-color: black;
-  padding: 10px;
-  margin: 60px;
+  background-color: orange;
 }
 
-#quote {
+.pagetext {
   text-align: center;
-  color: coral;
+  color: rgb(13, 242, 13);
+  background-color: blue;
+  padding: 10px;
+  margin: 60px;
+  border-radius: 25px;
 }
-/* I cant figure out why I cannot change the color 
-of the hyperlinked text in the navigation bar */
-.links {
-  color: coral;
+/* Advanced CSS Selectors used, media queries */
+/*I still dont feel very confident using media queries, so I opted for a relatively small change for phone users to 
+be able to see the menu more easily */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
-/* I drew alot of inspiration from the sample website 
-for the following styling. I tried to personalize it and omitted components that I 
-could not figure out the purpose for by 
-expirementing with the code. */
+
+/*navigation menu styling section*/
+/*Various Kinds of CSS units used, including proportional units. CSS Flex used*/
 .navbar {
-  color: coral;
-  background-color: black;
+  border-radius: 25px;
+  color: green;
+  background-color: blue;
   align-items: center;
   left: 0;
   right: 0;
-  height: 80px;
-  padding: 20px;
+  height: 20mm;
+  padding: 2%;
   display: flex;
   justify-content: space-between;
 }
 
-.photo {
+#i,
+#a,
+#b,
+#c {
+  color: rgb(13, 242, 13);
+}
+
+/*the buttons section for the portfolio page*/
+
+.Btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#goodBtn {
+  height: 40px;
+  width: 50mm;
+  border-width: 10px;
+  margin: 40px;
+  transition: width 4s, height, 4s;
+}
+/* Advanced CSS rules used: transitions */
+#goodBtn:hover {
+  height: 80px;
+  width: 100mm;
+  background-color: rgb(255, 5, 5);
+  font-style: italic;
+  font-size: larger;
+}
+
+#cringeBtn {
+  height: 40px;
+  width: 50mm;
+  border-width: 10px;
+  margin: 40px;
+}
+
+#lookMe {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: rgb(13, 242, 13);
+  border-radius: 5%;
+  float: right;
+}
+
+#boutMe {
+  color: rgb(13, 242, 13);
+  background-color: blue;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#floppyDiscPhoto {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Section expirementing with z-index and sticky positioning and building on shape and color skills learned in the previous assignment.*/
+
+.funShapes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 24in;
+}
+
+#abs1 {
+  position: absolute;
+  background-color: rgba(37, 136, 156, 0.506);
+  border-radius: 50%;
+  width: 400px;
+  height: 500px;
+  z-index: 1;
+}
+
+#abs2 {
+  position: absolute;
+  top: 1500px;
+  left: 100px;
+  background-color: rgba(156, 37, 37, 0.287);
+  border-radius: 50%;
+  width: 600px;
+  height: 900px;
+  z-index: -1;
+}
+
+#t1 {
+  position: sticky;
+  top: 600px;
+  z-index: -2;
+  background-color: yellow;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+#c1 {
+  position: sticky;
+  top: 75px;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+
+  border-left: 100px solid red;
+}
+#s1 {
+  position: sticky;
+  top: 300px;
+  z-index: -2;
+  background-color: rgb(53, 0, 244);
+  width: 80px;
+  height: 80px;
+}
+#s2 {
+  position: sticky;
+  top: 375px;
+  z-index: 4;
+  background-color: rgb(243, 10, 177);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+#s3 {
+  position: sticky;
+  top: 200px;
+  z-index: 5;
+  background-color: rgb(51, 243, 18);
+  border-radius: 40%;
+  width: 100px;
+  height: 100px;
 }
